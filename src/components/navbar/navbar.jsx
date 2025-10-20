@@ -1,6 +1,6 @@
 import './navbar.css'
 
-function Navbar(props) {
+function Navbar() {
     return (
         <header className='headerPage'>
             <div>

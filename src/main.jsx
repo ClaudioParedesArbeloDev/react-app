@@ -10,7 +10,7 @@ import './style.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Navbar saludo='Hola' despedida='Adios' />
+    <Navbar/>
     <Home />
     <Footer />
   </StrictMode>,

@@ -1,0 +1,13 @@
+.contador{
+    display: flex;
+    p{
+        margin: 10px;
+    }
+    button{
+        border-radius: 20px;
+        padding: 10px;
+        background: blue;
+        color: white;
+        border: none;
+    }
+}
