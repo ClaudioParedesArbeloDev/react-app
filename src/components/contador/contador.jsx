@@ -1,9 +1,17 @@
+//moduls
 import { useState } from "react";
 
+//css
 import './contador.css'
 
+//component
 function Contador() {
+    //logica
+    
+    //hook useState
     const [contador, setContador] = useState(0);
+
+    console.log(contador)
 
     const incrementar = () => {
         setContador(contador + 1);

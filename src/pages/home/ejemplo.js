@@ -21,3 +21,40 @@ const btn = document.querySelector('button')
 btn.onclick = function(){
     console.log("Hola")
 }
+
+
+const arrays = [
+    {
+    id: 1, 
+    name: "Claudio", 
+    age: 20, 
+    gender: "Male", 
+    profession: "Developer", 
+    city: "Bogota", 
+    country: "Colombia", 
+    email: "claudio@gmail.com"  
+    },
+    {
+        id: 2, 
+        name: "Claudio", 
+        age: 20, 
+        gender: "Male", 
+        profession: "Developer", 
+        city: "Bogota", 
+        country: "Colombia", 
+        email: "claudio@gmail.com"  
+    },  
+];
+
+function saludo(nombre){
+    const saludito = "hola " + nombre;
+    console.log(saludito);
+}
+
+saludo("Claudio");
+
+console.log(saludito);
+
+const nombrecito = "Claudio";
+
+console.log(nombrecito);
