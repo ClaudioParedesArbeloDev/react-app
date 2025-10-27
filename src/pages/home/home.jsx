@@ -1,7 +1,11 @@
 import { useState, useEffect } from 'react';
 
+
+
 function Home() {
     const [productos, setProductos] = useState([]);
+
+    
 
     useEffect(() => {
         fetch('https://fakestoreapi.com/products')
@@ -14,7 +18,7 @@ function Home() {
             });
     }, []);
 
-    console.log(productos);
+   
 
     return (
         <div>
@@ -24,6 +28,10 @@ function Home() {
                 {productos.map(producto => (
                     <div key={producto.id}>
                         {producto.title}
+                        ${producto.price}
+                        <img src={producto.image} alt={producto.title} />
+                        <p>{producto.description}</p>
+                        
                     </div>
                 ))}
             </div>
