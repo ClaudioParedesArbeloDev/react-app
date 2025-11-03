@@ -1,0 +1,36 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+.products{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.productWrapper{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    flex-direction: column;
+    width: 180px;
+    height: 300px;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 20px;
+    img{
+        width: 150px;
+        height: 150px;
+        object-fit:contain
+    }
+}
+
+.up{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2em;
+    color: blueviolet;
+}

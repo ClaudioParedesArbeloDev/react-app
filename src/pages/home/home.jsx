@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 
 
+import './home.css';
 
 function Home() {
     const [productos, setProductos] = useState([]);
@@ -21,20 +22,19 @@ function Home() {
    
 
     return (
-        <div>
-            <h1>Inicio</h1>
-            <p>Esta es la página de inicio</p>
-            <div>
+        <div className='home'>
+            <h1 id='aca'>Tienda</h1>
+            <div className='products'>
                 {productos.map(producto => (
-                    <div key={producto.id}>
+                    <div key={producto.id} className='productWrapper'>
+                        <img src={producto.image} alt={producto.title} />
                         {producto.title}
                         ${producto.price}
-                        <img src={producto.image} alt={producto.title} />
-                        <p>{producto.description}</p>
-                        
+                        <button>Add to cart</button>
                     </div>
                 ))}
             </div>
+            <a href='/'><i className="fa-regular fa-hand-point-up up"></i></a>
         </div>
     );
 }
